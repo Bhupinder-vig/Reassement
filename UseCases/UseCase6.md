@@ -1,14 +1,14 @@
-# USE CASE: 6 Produce a population summary report
+# USE CASE: 6 Produce Population Report
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-As a population reporter I want to view total population, city population and non-city population so that I can analyse population distribution.
+As a population reporter I want to retrieve population information for different areas so that the organisation can access population statistics.
 
 ### Scope
 
-World Population Reporting System.
+World Database System.
 
 ### Level
 
@@ -16,35 +16,35 @@ Primary task.
 
 ### Preconditions
 
-The database contains population information.
+Population information exists within the database.
 
 ### Success End Condition
 
-A population summary report is generated.
+The requested population report is displayed.
 
 ### Failed End Condition
 
-No report is produced.
+No population information is available.
 
 ### Primary Actor
 
-Population reporter.
+Population Reporter.
 
 ### Trigger
 
-The organisation requires population distribution information.
+The organisation requests population statistics.
 
 ## MAIN SUCCESS SCENARIO
 
-1. The organisation requests a population summary.
-2. The population reporter selects an area.
-3. The system calculates total population.
-4. The system calculates city and non-city populations.
-5. The report is displayed.
+1. The organisation requests population information.
+2. The population reporter selects an area type.
+3. The system searches the database.
+4. The system calculates the population.
+5. The result is displayed.
 
 ## EXTENSIONS
 
-3. **Population data unavailable**:
+3. **Area unavailable:**
     1. The system informs the population reporter.
 
 ## SUB-VARIATIONS

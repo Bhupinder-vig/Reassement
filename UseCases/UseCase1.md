@@ -1,14 +1,14 @@
-# USE CASE: 1 Produce a report on countries in a given area (world, continent, region) from highest population to lowest
+# USE CASE: 1 Produce a Country Report
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-As a population reporter I want to organise countries in an area based on largest population to smallest so that I can compare the populations of countries in that area.
+As a population reporter I want to generate a report of countries organised by population from highest to lowest so that the organisation can compare country populations.
 
 ### Scope
 
-World Population Reporting System.
+World Database System.
 
 ### Level
 
@@ -16,36 +16,36 @@ Primary task.
 
 ### Preconditions
 
-The selected area is known (world, continent, or region). The database contains population data for countries.
+The database contains country information including name, code, continent, region, population and capital details.
 
 ### Success End Condition
 
-A country population report is generated and displayed for the population reporter.
+A country report is generated containing the required country information.
 
 ### Failed End Condition
 
-No report is produced.
+No country report is produced due to missing or invalid database information.
 
 ### Primary Actor
 
-Population reporter.
+Population Reporter.
 
 ### Trigger
 
-The organisation requires information about country populations in a specific area.
+The organisation requires information about countries and their populations.
 
 ## MAIN SUCCESS SCENARIO
 
-1. The organisation requests country population information.
-2. The population reporter selects the required area.
-3. The system retrieves country population data from the database.
-4. The system organises countries from highest population to lowest.
-5. The population reporter provides the generated report to the organisation.
+1. The organisation requests a country population report.
+2. The population reporter selects the required country report option.
+3. The system retrieves country data from the database.
+4. The system organises countries by population from highest to lowest.
+5. The report is displayed to the population reporter.
 
 ## EXTENSIONS
 
-3. **Area does not exist**:
-    1. The system informs the population reporter that the selected area cannot be found.
+4. **No country data exists:**
+    1. The system informs the population reporter that no country information is available.
 
 ## SUB-VARIATIONS
 

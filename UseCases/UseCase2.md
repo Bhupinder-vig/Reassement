@@ -1,14 +1,14 @@
-# USE CASE: 2 Produce a report on the top N populated countries in a given area
+# USE CASE: 2 Produce a City Report
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-As a population reporter I want to view the top N populated countries in an area so that I can identify countries with the largest populations.
+As a population reporter I want to generate a city report organised by population so that the organisation can analyse population distribution between cities.
 
 ### Scope
 
-World Population Reporting System.
+World Database System.
 
 ### Level
 
@@ -16,36 +16,36 @@ Primary task.
 
 ### Preconditions
 
-The selected area exists and the user provides a valid number of countries required. Database contains country population data.
+The database contains city information including name, country, district and population.
 
 ### Success End Condition
 
-A report containing the top N populated countries is generated.
+A city report is generated and provided to the organisation.
 
 ### Failed End Condition
 
-No report is produced.
+No city report is produced.
 
 ### Primary Actor
 
-Population reporter.
+Population Reporter.
 
 ### Trigger
 
-The organisation requires a ranking of the most populated countries.
+The organisation requires city population information.
 
 ## MAIN SUCCESS SCENARIO
 
-1. The organisation requests the top populated countries report.
-2. The population reporter selects an area and enters the required number of countries.
-3. The system retrieves country population data.
-4. The system sorts countries by population.
-5. The system displays the top N populated countries.
+1. The organisation requests a city population report.
+2. The population reporter selects the required area.
+3. The system retrieves city data from the database.
+4. The system sorts cities by population.
+5. The report is displayed.
 
 ## EXTENSIONS
 
-2. **Invalid number entered**:
-    1. The system requests a valid number from the population reporter.
+4. **Area does not exist:**
+    1. The system informs the population reporter that no cities were found.
 
 ## SUB-VARIATIONS
 

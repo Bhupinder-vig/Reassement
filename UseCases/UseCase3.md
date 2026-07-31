@@ -1,14 +1,14 @@
-# USE CASE: 3 Produce a report on cities in a given area from highest population to lowest
+# USE CASE: 3 Produce a Capital City Report
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-As a population reporter I want to organise cities by population so that I can compare population sizes between different cities.
+As a population reporter I want to generate a report of capital cities organised by population so that the organisation can compare capital city sizes.
 
 ### Scope
 
-World Population Reporting System.
+World Database System.
 
 ### Level
 
@@ -16,36 +16,36 @@ Primary task.
 
 ### Preconditions
 
-The selected area exists and city population information is available in the database.
+The database contains capital city information linked to countries.
 
 ### Success End Condition
 
-A city population report is generated.
+A capital city report containing city name, country and population is produced.
 
 ### Failed End Condition
 
-No city report is produced.
+No capital city report is produced.
 
 ### Primary Actor
 
-Population reporter.
+Population Reporter.
 
 ### Trigger
 
-The organisation requires information about city populations.
+The organisation requests capital city population information.
 
 ## MAIN SUCCESS SCENARIO
 
-1. The organisation requests city population information.
-2. The population reporter selects an area.
-3. The system retrieves city data from the database.
-4. The system organises cities from highest population to lowest.
+1. The organisation requests a capital city report.
+2. The population reporter selects the required area.
+3. The system identifies capital cities from the database.
+4. The system orders capital cities by population.
 5. The report is displayed.
 
 ## EXTENSIONS
 
-3. **No cities found**:
-    1. The system informs the population reporter that no cities exist in the selected area.
+4. **No capital cities found:**
+    1. The system informs the population reporter.
 
 ## SUB-VARIATIONS
 

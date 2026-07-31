@@ -1,14 +1,14 @@
-# USE CASE: 4 Produce a report on the top N populated cities in a given area
+# USE CASE: 4 Produce Top N Populated Cities Report
 
 ## CHARACTERISTIC INFORMATION
 
 ### Goal in Context
 
-As a population reporter I want to view the top N populated cities so that I can identify the largest cities in a selected area.
+As a population reporter I want to generate the top N populated cities so that the organisation can view the largest cities in a selected area.
 
 ### Scope
 
-World Population Reporting System.
+World Database System.
 
 ### Level
 
@@ -16,36 +16,36 @@ Primary task.
 
 ### Preconditions
 
-The database contains city population information and a valid number N is provided.
+The user provides a valid number N and the database contains city population data.
 
 ### Success End Condition
 
-A top N city population report is generated.
+A report showing the top N populated cities is generated.
 
 ### Failed End Condition
 
-No report is produced.
+No report is generated.
 
 ### Primary Actor
 
-Population reporter.
+Population Reporter.
 
 ### Trigger
 
-The organisation requires information about the largest cities.
+The organisation requests a limited city population ranking.
 
 ## MAIN SUCCESS SCENARIO
 
-1. The organisation requests the top N city report.
-2. The population reporter enters the area and number required.
+1. The organisation requests the top N cities.
+2. The population reporter enters the required number of cities.
 3. The system retrieves city population data.
-4. The system sorts cities by population.
-5. The system displays the results.
+4. The system sorts cities from highest to lowest population.
+5. The system displays the requested number of cities.
 
 ## EXTENSIONS
 
-2. **Invalid N value**:
-    1. The system asks the population reporter to enter a valid number.
+2. **Invalid number entered:**
+    1. The system requests a valid number.
 
 ## SUB-VARIATIONS
 
