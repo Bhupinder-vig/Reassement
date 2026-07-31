@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+
+actor User
+
+database "World Database" as DB
+
+rectangle "World Population Reporting System" {
+
+  usecase UC1 as "Generate Country Report"
+  usecase UC2 as "Generate City Report"
+  usecase UC3 as "Generate Capital City Report"
+  usecase UC4 as "Generate Language Report"
+  usecase UC5 as "Generate Population Report"
+  usecase UC6 as "Generate Population Summary"
+
+  usecase UC7 as "Search by Continent"
+  usecase UC8 as "Search by Region"
+  usecase UC9 as "Search by Country"
+  usecase UC10 as "Search by District"
+  usecase UC11 as "Display Top N Results"
+
+  UC1 .> UC7 : <<include>>
+  UC1 .> UC8 : <<include>>
+  UC1 .> UC11 : <<include>>
+
+  UC2 .> UC7 : <<include>>
+  UC2 .> UC8 : <<include>>
+  UC2 .> UC9 : <<include>>
+  UC2 .> UC10 : <<include>>
+  UC2 .> UC11 : <<include>>
+
+  UC3 .> UC7 : <<include>>
+  UC3 .> UC8 : <<include>>
+  UC3 .> UC11 : <<include>>
+
+  UC5 .> UC7 : <<include>>
+  UC5 .> UC8 : <<include>>
+  UC5 .> UC9 : <<include>>
+
+  UC6 .> UC7 : <<include>>
+  UC6 .> UC8 : <<include>>
+  UC6 .> UC9 : <<include>>
+
+  UC1 --> DB
+  UC2 --> DB
+  UC3 --> DB
+  UC4 --> DB
+  UC5 --> DB
+  UC6 --> DB
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+
+@enduml
