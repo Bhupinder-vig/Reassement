@@ -1,0 +1,46 @@
+# Code of Conduct
+
+## Introduction
+
+This document outlines the standards of behaviour expected when contributing to the Population Reporting System project.
+
+The aim is to maintain a respectful, professional, and productive development environment throughout the project.
+
+## Expected Behaviour
+
+All contributors and users of this project are expected to:
+
+* Communicate respectfully and professionally.
+* Treat others fairly and consider different opinions.
+* Write clear and understandable code.
+* Provide constructive feedback during code reviews.
+* Follow good software development practices.
+* Report issues clearly and provide enough information to reproduce problems.
+
+## Unacceptable Behaviour
+
+The following behaviours are not acceptable:
+
+* Harassment, discrimination, or personal attacks.
+* Offensive or inappropriate language.
+* Deliberately introducing harmful code.
+* Sharing private information without permission.
+* Disrupting project discussions or development activities.
+
+## Development Guidelines
+
+Contributors should:
+
+* Create meaningful commit messages.
+* Follow the agreed Git workflow.
+* Test changes before merging.
+* Keep documentation updated.
+* Create issues for bugs or new feature requests.
+
+## Reporting Issues
+
+Any problems related to code quality, project management, or inappropriate behaviour should be reported through the project's GitHub Issues page.
+
+## Commitment
+
+By contributing to this project, contributors agree to follow this Code of Conduct and help maintain a positive and professional development environment.
